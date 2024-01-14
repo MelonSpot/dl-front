@@ -1,21 +1,22 @@
 import React from 'react'
-import styled from "styled-components"
+import styled from 'styled-components'
 
 import { setResponsive } from 'utils/style'
 
-function LeftDock() {
+function RightView() {
   return (
-    <Container>LeftDock</Container>
+    <Container>
+        rightview
+    </Container>
   )
 }
 
-export default LeftDock
+export default RightView
 
 const Container = styled.div`
-    width: 100%;
     border: 2px solid rgba(255, 0, 0, 0.6);
-    grid-area: left-sidebar;
+    grid-area: main-view;
     ${setResponsive.phone`
-        display: none;
+        flex: 1;
     `}
 `
