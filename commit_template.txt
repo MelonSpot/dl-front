@@ -1,6 +1,6 @@
 [Type] (Branch): Brief description
 
-[optional]: #[issue number]
+Related Issue (optional): #[issue number]
 
 - types
 Feature : New feature
