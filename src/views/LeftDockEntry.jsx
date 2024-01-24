@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function LeftDockEntry({ icon, clickHandler, children }) {
+function LeftDockEntry({ vis, clickHandler, children }) {
   return (
-    <Container>{children}</Container>
+    <Container>
+      { vis }
+      { children }
+    </Container>
   )
 }
 
