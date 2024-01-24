@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 
-import { LeftFavs, LeftDockEntry, SearchInput } from "views"
+import { LeftFavs, LeftMusicEntry, SearchInput } from "views"
 
 function LeftPlaylists() {
   return (
@@ -9,15 +9,15 @@ function LeftPlaylists() {
       <SearchInput />
       <Playlists>
         <LeftFavs count={999}/>
-        <LeftDockEntry>LeftPlayList 02</LeftDockEntry>
-        <LeftDockEntry>LeftPlayList 03</LeftDockEntry>
-        <LeftDockEntry>LeftPlayList 04</LeftDockEntry>
-        <LeftDockEntry>LeftPlayList 05</LeftDockEntry>
-        <LeftDockEntry>LeftPlayList 06</LeftDockEntry>
-        <LeftDockEntry>LeftPlayList 07</LeftDockEntry>
-        <LeftDockEntry>LeftPlayList 08</LeftDockEntry>
-        <LeftDockEntry>LeftPlayList 09</LeftDockEntry>
-        <LeftDockEntry>LeftPlayList 10</LeftDockEntry>
+        <LeftMusicEntry title={"예시 타이틀 01"} artist={"artist unknown"}/>
+        <LeftMusicEntry title={"예시 타이틀 02"} artist={"artist unknown"}/>
+        <LeftMusicEntry title={"예시 타이틀 03"} artist={"artist unknown"}/>
+        <LeftMusicEntry title={"예시 타이틀 04"} artist={"artist unknown"}/>
+        <LeftMusicEntry title={"예시 타이틀 05"} artist={"artist unknown"}/>
+        <LeftMusicEntry title={"예시 타이틀 06"} artist={"artist unknown"}/>
+        <LeftMusicEntry title={"예시 타이틀 07"} artist={"artist unknown"}/>
+        <LeftMusicEntry title={"예시 타이틀 08"} artist={"artist unknown"}/>
+        <LeftMusicEntry title={"예시 타이틀 09"} artist={"artist unknown"}/>
       </Playlists>
     </Container>
   )
