@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from "styled-components"
 
-import { LeftDockEntry, SearchInput } from "views"
+import { LeftFavs, LeftDockEntry, SearchInput } from "views"
 
 function LeftPlaylists() {
   return (
     <Container>
       <SearchInput />
       <Playlists>
-        <LeftDockEntry>LeftPlayList 01</LeftDockEntry>
+        <LeftFavs count={999}/>
         <LeftDockEntry>LeftPlayList 02</LeftDockEntry>
         <LeftDockEntry>LeftPlayList 03</LeftDockEntry>
         <LeftDockEntry>LeftPlayList 04</LeftDockEntry>
