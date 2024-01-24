@@ -6,7 +6,7 @@ import { LeftFavs, LeftMusicEntry, SearchInput } from "views"
 function LeftPlaylists() {
   return (
     <Container>
-      <SearchInput />
+      <SearchInput size="32px" radius="none">플레이 기록에서 검색</SearchInput>
       <Playlists>
         <LeftFavs count={999}/>
         <LeftMusicEntry title={"예시 타이틀 01"} artist={"artist unknown"}/>

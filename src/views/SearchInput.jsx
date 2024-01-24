@@ -5,11 +5,11 @@ import SearchIcon from "@mui/icons-material/Search"
 
 
 
-function SearchInput() {
+function SearchInput({ size, radius, children }) {
   return (
-    <Container>
+    <Container size={size} radius={radius}>
         <SearchIcon />
-        <input role="searchbox" maxLength="80" autoCorrect="off" autoCapitalize="off" spellCheck="false" placeholder="플레이 기록에서 검색" aria-hidden="true" />
+        <input role="searchbox" maxLength="80" autoCorrect="off" autoCapitalize="off" spellCheck="false" placeholder={children} aria-hidden="true" />
     </Container>
   )
 }
@@ -20,10 +20,11 @@ const Container = styled.div`
     padding: 4px;
     display: flex;
     align-items: center;
-    max-width: 400px;
-    min-width: 100%;
-    height: 32px;
+    width: min(368px, 100%);
+    height: ${prop => prop.size};
     gap: 4px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: ${prop => prop.radius};
     > input {
         cursor: text;
         background-color: transparent;

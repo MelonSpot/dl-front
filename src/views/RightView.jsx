@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { RightControls } from "views"
 import { setResponsive } from 'utils/style'
 
 function RightView() {
   return (
     <Container>
-        rightview
+        <RightControls />
+        {/* HomeView */}
+        {/* PlaylistView */}
     </Container>
   )
 }
