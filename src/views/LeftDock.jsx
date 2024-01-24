@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from "styled-components"
 
-import { LeftDockEntry } from "views"
+import { LeftControls, LeftPlaylists } from "views"
 import { setResponsive } from 'utils/style'
 
 function LeftDock() {
   return (
     <Container>
-      <LeftDockEntry>LeftDockEntry</LeftDockEntry>
+      <LeftControls />
+      <LeftPlaylists />
     </Container>
   )
 }

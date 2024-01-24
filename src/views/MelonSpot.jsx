@@ -31,6 +31,8 @@ const Container = styled.div`
                     "now-playing-bar now-playing-bar";
     gap: 8px;
     padding: 8px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.6);
     ${setResponsive.phone`
         display: flex;
         flex-direction: column;

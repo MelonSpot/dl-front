@@ -14,5 +14,5 @@ const Container = styled.div`
     max-width: 400px;
     min-width: 50px;
     height: 50px;
-    border: 2px solid orange;
+    border: 2px solid gray;
 `
