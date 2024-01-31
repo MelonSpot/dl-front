@@ -1,7 +1,20 @@
 export const theme = {
+    font: {
+        defaultSize: `0.9rem`,
+        defaultColor: `rgba(0, 0, 0, 0.45)`
+    },
     color: {
-        primaryColor: `rgba(47, 42, 221, 1)`,
-        secondaryColor: `rgba(72, 209, 102, 1)`,
+        primary: `rgba(47, 42, 221, 1)`,
+        secondary: `rgba(72, 209, 102, 1)`,
+        white: `rgba(255, 250, 253, 1)`,
+    },
+    gap: {
+        default: "1rem",
+        sm: "0.5rem"
+    },
+    radius: {
+        default: "0.5rem",
+        sm: "0.25rem"
     },
     inputHeight: {
         sm: "1rem",

@@ -10,5 +10,9 @@ export { default as LeftPlaylists } from "views/LeftPlaylists"
 
 export { default as RightControls } from "views/RightControls"
 export { default as RightAuth } from "views/RightAuth"
+export { default as HomeView } from "views/HomeView"
 
 export { default as SearchInput } from "views/SearchInput"
+export { default as AuthInput } from "views/AuthInput"
+
+export { default as LoginModal } from "views/LoginModal"
