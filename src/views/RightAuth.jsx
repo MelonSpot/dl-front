@@ -2,8 +2,9 @@ import React from 'react'
 import styled from "styled-components"
 
 function RightAuth({ isLoggedIn, cover, clickHandler }) {
+
   return (
-    <Container>
+    <Container onClick={clickHandler}>
         <Cover />
     </Container>
   )

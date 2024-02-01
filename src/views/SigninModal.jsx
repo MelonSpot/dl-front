@@ -1,12 +1,14 @@
-import React from 'react'
-import styled from "styled-components"
+import React, { useState } from 'react'
+import styled, { useTheme } from "styled-components"
 
 import { logo } from "assets"
 import { AuthInput } from "views"
 import { DarkBackground, ModalContainer } from 'utils/style'
 import CloseIcon from '@mui/icons-material/Close';
 
-function LoginModal() {
+function SigninModal() {
+  const [idCheck, setIdCheck] = useState(false)
+  const theme = useTheme()
   return (
     <DarkBackground>
       <ModalContainer>
@@ -18,11 +20,16 @@ function LoginModal() {
         </ImgBox>
         <InputBox>
           <AuthInput placeholder="아이디"/>
+          <CriteriaGuide color={idCheck ? `${theme.color.primary}` : `${theme.color.warning}`}>아이디는 4~16자 사이로 입력해주세요.</CriteriaGuide>
           <AuthInput placeholder="비밀번호"/>
+          <CriteriaGuide color={idCheck ? `${theme.color.primary}` : `${theme.color.warning}`}>8자 이상</CriteriaGuide>
+          <CriteriaGuide color={idCheck ? `${theme.color.primary}` : `${theme.color.warning}`}>알파벳 대소문자, 특수문자</CriteriaGuide>
+          <AuthInput placeholder="비밀번호 확인"/>
+          <CriteriaGuide color={idCheck ? `${theme.color.primary}` : `${theme.color.warning}`}>비밀번호가 일치하지 않습니다.</CriteriaGuide>
         </InputBox>
         <AuthControlBox>
-          <LoginBtn>로그인</LoginBtn>
-          <SignUp>회원가입</SignUp>
+          <LoginBtn>회원가입</LoginBtn>
+          <SignUp>로그인</SignUp>
         </AuthControlBox>
         
       </ModalContainer>
@@ -30,28 +37,7 @@ function LoginModal() {
   )
 }
 
-export default LoginModal
-
-// const DarkBackground = styled.div`
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: rgba(0, 0, 0, 0.5);
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// `
-
-// const Container = styled.div`
-//   width: 20rem;
-//   background-color: ${prop => prop.theme.color.white};
-//   border-radius: 0.5rem;
-//   padding: 1.5rem;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   gap: 0.5rem;
-// `
+export default SigninModal
 
 const CloseBox = styled.div`
   width: 100%;
@@ -96,4 +82,11 @@ const SignUp = styled.div`
   &:hover {
     border-bottom: 0.09rem solid ${prop => prop.theme.font.defaultColor};
   }
+`
+
+const CriteriaGuide = styled.p`
+  color: ${prop => prop.color};
+  line-height: 1.2rem;
+  font-size: ${prop => prop.theme.font.smSize};
+  padding: 0 0.4rem;
 `

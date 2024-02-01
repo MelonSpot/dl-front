@@ -16,3 +16,4 @@ export { default as SearchInput } from "views/SearchInput"
 export { default as AuthInput } from "views/AuthInput"
 
 export { default as LoginModal } from "views/LoginModal"
+export { default as SigninModal } from "views/SigninModal"
